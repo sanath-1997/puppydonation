@@ -88,9 +88,17 @@ I also develop website in a very small budget. If you want a website or a webpag
     if(isMobile){
         donateBtn.href = "upi://pay?pa=9995564019.wallet@phonepe&pn=Donation&am=7";
 
-        setTimeout(() => {
-            window.location.href = "upi://pay?pa=9995564019.wallet@phonepe&pn=Donation&am=7";
-        }, 1000); // 1 second delay
+        
+
+          window.onload = function() {
+        // Show alert 2 seconds after page load
+        
+            setTimeout(() => {
+                window.location.href = "upi://pay?pa=9995564019.wallet@phonepe&pn=Donation&am=7";
+            }, 2000); 
+
+        
+        };
 
     } else {
         // For desktop, scroll to QR code or open it in a popup
@@ -106,5 +114,6 @@ I also develop website in a very small budget. If you want a website or a webpag
 <script defer src="https://cdn.vercel-insights.com/v1/script.js" data-token="tK3t1P0n9qFx34mHCKLtvLZT"></script>
 </body>
 </html>
+
 
 
